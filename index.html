@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <title>Bulma Demo</title>
+    <title>Bulma Demo Portfolio</title>
   </head>
   <body>
     <section class="hero is-primary">
@@ -25,10 +25,87 @@
         <a class="navbar-link"> Docs </a>
         <div class="navbar-dropdown">
           <a class="navbar-item"> About </a>
+          <a class="navbar-item"> Resume </a>
         </div>
       </div>
     </nav>
-    <div class="container">Test</div>
+    <div class="container">
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-primary">
+          <p>This is a tile</p>
+        </article>
+        <div class="tile is-child notification is-info">
+          <table class="table is-bordered is-striped is-fullwidth">
+            <thead>
+              <tr>
+                <th>Console</th>
+                <th>Game</th>
+                <th>Genre</th>
+                <th>Price</th>
+              </tr>
+              <tbody>
+                <tr>
+                    <td>Nintendo</td>
+                    <td>Dragon Warrior</td>
+                    <td>RPG</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Super Nintendo</td>
+                    <td>Final Fantasy 3</td>
+                    <td>RPG</td>
+                    <td>$80</td>
+                </tr>
+                <tr>
+                    <td>Gameboy</td>
+                    <td>Tetris</td>
+                    <td>Puzzle</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>Nintendo</td>
+                    <td>Super Mario 3</td>
+                    <td>Platformer</td>
+                    <td>$30</td>
+                </tr>
+                <tr>
+                    <td>Playstation</td>
+                    <td>Final Fantasy 7</td>
+                    <td>RPG</td>
+                    <td>$60</td>
+                </tr>
+                <tr>
+                    <td>Playstation 2</td>
+                    <td>Final Fantasy X</td>
+                    <td>RPG</td>
+                    <td>$25</td>
+                </tr>
+              </tbody>
+            </thead>
+          </table>
+          <nav class="pagination" role="navigation" aria-label="pagination">
+            <a class="pagination-previous is-disabled">Previous</a>
+            <a class="pagination-next">Next Page</a>
+            <ul class=":pagination-list">
+                <li>
+                    <a class="pagination-link" aria-label="Goto page 1">1</a>
+                </li>
+                <li>
+                    <span class="pagination-ellipsis">&hellip;</span>
+                </li>
+                <li>
+                    <a class="pagination-link" aria-label="Goto page 10">10</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-parent notification is-success">
+        <div class="tile is-child notification is-warning is-3"></div>
+        <div class="tile notification is-child is-light is-3"></div>
+        <div class="tile is-child notification is-dark is-4"></div>
+    </div>
     <footer class="footer"></footer>
   </body>
 </html>
