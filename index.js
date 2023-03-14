@@ -1,6 +1,7 @@
 console.log("linked");
 
 const $body = $("body");
+const $footer = $("footer");
 
 $(document).ready(function () {
   $("#about").on("click", function () {
@@ -19,5 +20,6 @@ function createTile() {
     let $col = $(`<div class="tile">Col ${x}</div>`);
     $div.append($col);
   }
-  $body.append($div);
+  $div.insertBefore($footer);
+  //$body.append($div);
 }
